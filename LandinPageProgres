@@ -1,0 +1,68 @@
+<head>
+   <meta charset="UTF-8">
+
+
+   <title>LookMedico</title>
+
+
+   <link rel="stylesheet" href="style/style.css">
+
+
+
+</head>
+<body>
+
+
+
+
+<header>
+   <div class="logo">
+       <img src="images/logo.png" alt="">
+       <h2 class="logonombre">ima_Look Medico</h2>
+
+
+   </div>
+
+
+
+
+   <input type="checkbox" id="menu-bar">
+
+
+   <label for="menu-bar" class="fas fa-bars"></label>
+
+
+   <nav class="navbar">
+       <a href="#home">Inicio</a>
+       <a href="#features">nuestro servicio</a>
+       <a href="#about">acerca de nosotros</a>
+       <a href="#review">nuestro equipo</a>
+       <a href="#contact">contactanos</a>
+   </nav>
+
+
+</header>
+
+
+
+
+<section class="home" id="home">
+
+
+   <div class="content">
+       <h3>Your best option to get uniforms and suppliers</h3>
+       <p>Try it now by downloading it from your cell phone, availability is totally free.</p>
+       <div class="column">
+           <div class="image">
+               <a href="https://play.google.com/store/games?hl=es_PE&gl=US" target="_blank" rel="moopener noreferrer"><img src="images/google-play.png" alt=""></a>
+           </div>
+           <div class="image2">
+               <a href="https://www.apple.com/la/app-store/" target="_blank" rel="moopener noreferrer"><img src="images/appstore.png" alt=""></a>
+           </div>
+       </div>
+
+
+   </div>
+
+
+</section>
