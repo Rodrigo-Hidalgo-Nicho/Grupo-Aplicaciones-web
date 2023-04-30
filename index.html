@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Look Médico</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro&display=swap" rel="stylesheet">;
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <section class="header">
+        <nav>
+            <a href="index.html"></a>
+
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="images/isologo.png" alt=""></a>
+                <h2 class="logonombre">Look Médico</h2>
+
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i >
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Our service</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+
+                    <button type="button" class="btn">SIGN UP</button>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <!--/.Navbar-->
+
+
+    <!--Section Home-->
+    <section id=home class="home">
+        <div class="background-image" style="background-image: url(images/home-bg-img.jpg)"> </div>
+        <div class="row">
+            <div class="home-col">
+                <h1 class="title">Your best option to get <br>your best uniforms and <br> suppliers</h1>
+                <p >Try it now by downloading it from your cell<br>
+                    phone, availability is totally free<br>
+                </p>
+                <a href="#" class="btn1">SIGN UP FOR FREE</a>
+
+            </div>
+
+        </div>
+    </section>
+    <!--/.Section Home-->
+
+
+    <!--Section About us-->
+    <section class="about" id="about">
+        <h2 class="title"> About us </h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/f-icon1.png" alt="">
+                <h3>Our story</h3>
+                <p> LookMédico was born with the purpose of being a tool that provides support to its users when looking
+                    for a desired garment, requesting the manufacture and delivery of the product.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/otro.png" alt="" >
+                <h3>Our purpose</h3>
+                <p>Our purpose is to offer a wide range of products, from uniforms to accessories, with customizable
+                    options to suit individual customer preferences and create lasting relationships with our
+                    customers.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!--/.Section About us-->
+
+
+    <!--Section Our service-->
+    <section class="service" id="service">
+        <h2 class="title"> Our Service </h2>
+
+        <div class="column">
+            <div class="image">
+                <img src="images/service-img2.png" alt="">
+            </div>
+
+            <div class="content">
+                <h4>QUALITY AND TRUST</h4> <br>
+                <h3>We offer the best options <br>for our clients</h3>
+                <p>LookMédico offers a direct connection with customers and suppliers,<br> quality in garments, purchase
+                    security and reliability.</p>
+            </div>
+
+        </div>
+    </section>
+    <!--/.Section Our service-->
+
+
+    <!--Section Team-->
+    <section class=team id="team">
+        <h2 class="title">Team</h2>
+
+        <div class="box">
+            <div class="team-col">
+                <img src="images/1_jesús.png" alt class="img-responsive" alt=""  height="150px">
+                <h4>Jesus Lazo</h4>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-col">
+                <img src="images/2_alvaro.png" alt class="img-responsive" alt="" height="150px">
+                <h4>Alvaro Hidalgo</h4>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-col">
+                <img src="images/3_gianfranco.png" alt class="img-responsive" alt="" height="150px">
+                <h4>Gianfranco Luna</h4>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-col">
+                <img src="images/4_lisseth.png" alt class="img-responsive" alt="" height="150px">
+                <h4>Lisseth Saavedra</h4>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-col">
+                <img src="images/5_valery.png" alt class="img-responsive" alt="" height="150px">
+                <h4>Valery Ayasta</h4>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/.Section Team-->
+
+
+    <!--Section Download-->
+    <section class="download" id="download">
+        <h2 class="title"> Download </h2>
+
+        <div class="column">
+            <div class="image">
+                <img src="images/undraw_download_re_li50.svg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Join the fastest and <br>
+                    most reliable way to <br>
+                    buy or sell uniforms</h3>
+                <a href="https://play.google.com/store?hl=es_PE&gl=US" target="_blank">
+                    <img src="images/play-store.jfif" alt="" width = "200px" height="60px">
+                </a>
+                <br>
+                <a href="https://www.apple.com/la/app-store/" target="_blank">
+                    <img src="images/app-store.jfif" alt="" width = "198px" height="60px">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--/.Section Download-->
+
+
+    <!--Section Login-->
+    <section class="login" id="login">
+        <h2 class="title"> Log in </h2>
+
+        <h3>Join the best community for <br>
+            buying and selling health clothing</h3>
+
+        <div class="box">
+            <div class="login-col">
+                <h4>Safe search</h4>
+                <p>We guarantee the best<br> search options for your <br>garments through our<br> service.</p>
+            </div>
+            <div class="login-col">
+                <h4>Best suppliers</h4>
+                <p>With LookMédico you <br>can find the most<br> reliable uniform<br> suppliers.</p>
+            </div>
+            <div class="login-col">
+                <h4>Trust and quality</h4>
+                <p>We guarantee you to<br> connect safely and get <br>quality products.</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn1">LOG IN</a>
+    </section>
+
+    <!--/.Section Contact-->
+    <section class="contact" id="contact">
+
+        <div class="image">
+            <img src="images/contact-img.png" alt="">
+        </div>
+
+        <form action="">
+
+            <h1 class="heading">Contact Us</h1>
+
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required>
+                <label>LastName</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" required>
+                <label>email</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="number" required>
+                <label>phone</label>
+            </div>
+
+            <div class="inputBox">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label>How can we help you? </label>
+            </div>
+
+            <input type="submit" class="btn" value="SEND MESSAGE">
+
+        </form>
+
+    </section>
+    <!--/.Section Contact-->
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Our service</a>
+                    <a href="#">Team</a>
+                    <a href="#">Download</a>
+                    <a href="#">Login</a>
+                    <a href="#">Contact us</a>
+                </div>
+
+                <div class="box">
+                    <h3>Siguenos</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+                </div>
+
+                <div class="box">
+                    <h3>Informacion de contacto</h3>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p> +51 999-456-789 <br> +111-2222-333 </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p> example@gmail.com <br> example@gmail.com </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Lima, Lima - 400104 </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h4 class="credit"> &copy; UPC 2023 - LookMédico </h4>
+
+        </div>
+    </footer>
+    <!--/.Footer-->
+
+
+    <!------JavaScript for Toogle Menu------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="js/main.js"></script>
+
+
+
+
+</body>
+</html>
+
