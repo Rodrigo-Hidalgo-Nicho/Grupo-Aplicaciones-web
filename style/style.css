@@ -112,7 +112,6 @@ nav .fa{
 /* /. Section Header*/
 
 /* Section Home */
-
 .home {
     width: 100%;
     margin: auto;
@@ -143,6 +142,47 @@ nav .fa{
     height: 100%;
     background-color: white;
     opacity: 0%;
+}
+
+.home .en{
+    color: #333;
+    text-align: left;
+}
+.home .es{
+    color: #00a1ff;
+    text-align: left;
+}
+.home .check{
+    justify-content: left;
+    position: relative;
+    width: 50px;
+}
+.home .check:before{
+    justify-content: left;
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.home .check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.home .check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.home .check:checked:before{
+    background: #00a1ff;
 }
 
 .home h1 {
@@ -210,7 +250,7 @@ nav .fa{
 /* Section About us */
 
 .about {
-    background-color: #f0f1f4;
+    background-color: white;
 }
 .about{
     margin: auto;
@@ -220,9 +260,8 @@ nav .fa{
 
 .about h2 {
     font: bold 50px 'Open sans', sans-serif;
-    color: black;
+    color: #0099AD;
     margin-bottom: 15px;
-    margin-left: 50px;
     text-align: center;
 }
 
@@ -284,7 +323,6 @@ nav .fa{
     font: bold 50px 'Open sans', sans-serif;
     color: white;
     margin-bottom: 15px;
-    margin-left: 50px;
     text-align: center;
 }
 
@@ -346,9 +384,8 @@ nav .fa{
 }
 .team h2 {
     font: bold 50px 'Open sans', sans-serif;
-    color: black;
+    color: #0099AD;
     margin-bottom: 15px;
-    margin-left: 50px;
     text-align: center;
 }
 .team p{
@@ -388,8 +425,8 @@ nav .fa{
 /* /.Section Team*/
 
 
-/* Section Download */
-.download{
+/* Section Product */
+.product{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -397,65 +434,87 @@ nav .fa{
     position: relative;
     justify-content: center;
     min-height: 100vh;
-    background-color: #0099AD;
+    background-color: white;
 }
-.download{
+.product{
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-.download .grid div {
+.product .grid div {
     padding: 0 30px;
     flex-basis: 33%;
     text-align: center;
 }
-.download h2 {
+.product h2 {
     font: bold 50px 'Open sans', sans-serif;
-    color: white;
+    color: #0099AD;
     margin-bottom: 15px;
-    margin-left: 50px;
     text-align: center;
 }
 
-.download .column{
+.product .column{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.download .column .image{
+.product .column .video{
+    margin-top: 50px;
     flex:1 1 40rem;
+    margin-left: 50px;
+    position: relative;
 }
 
-.download .column .image img{
+.product .column .image img{
     width:80%;
 }
 
-.download .column .content{
+.product .column .content{
     flex:1 1 40rem;
 }
 
-.download .column .content h3{
-    font-size:2.5rem;
+.product .column .content h3{
+    font: bold 20px 'Open sans', sans-serif;
+    font-size:2.0rem;
     padding: 0px 30px;
-    color:white;
-    text-align: center;
+    color: #333333;
+    text-align: left;
 }
-
-.download .column .content a img{
+.product .column .content h4{
     margin-top: 20px;
-    align-content: center;
-    position: relative;
-    place-content: center;
-
+    font-size: 1.0rem;
+    padding: 0px 30px;
+    color: black;
+}
+.product .box{
+    background-color: white;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-/* /.Section Download*/
+.product p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.product-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* /.Section Product*/
 
 
-/* Section Login */
-.login {
+/* Section Benefits */
+.benefits {
     height: 100%;
     margin: auto;
     text-align: center;
@@ -465,26 +524,25 @@ nav .fa{
     min-height: 100vh;
     background-color: white;
 }
-.login{
+.benefits{
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-.login h2 {
+.benefits h2 {
     font: bold 50px 'Open sans', sans-serif;
-    color: black;
+    color: #0099AD;
     margin-bottom: 15px;
-    margin-left: 50px;
     text-align: center;
 }
-.login p{
+.benefits p{
     color: black;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-.login .row{
+.benefits .row{
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 5%;
@@ -492,14 +550,13 @@ nav .fa{
     justify-content: space-between;
 }
 
-.login a.btn1 {
+.benefits a.btn1 {
     padding: 20px 46px;
-    margin-left: 20px;
     text-align: center;
     justify-content: center;
 }
 
-.login .box{
+.benefits .box{
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 5%;
@@ -507,7 +564,7 @@ nav .fa{
     justify-content: space-between;
 }
 
-.login-col{
+.benefits-col{
     flex-basis: 31%;
     background: white;
     border-radius: 10px;
@@ -517,7 +574,9 @@ nav .fa{
     transition: 0.5s;
 }
 
-.login-col:hover{
+
+
+.benefits-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 @media(max-width: 1000px){
@@ -526,7 +585,7 @@ nav .fa{
     }
 }
 
-/* /.Section Login*/
+/* /.Section Benefits*/
 
 
 /* Section Contact us */
