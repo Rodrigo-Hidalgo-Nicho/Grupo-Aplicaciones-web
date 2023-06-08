@@ -143,22 +143,22 @@ nav .fa{
     background-color: white;
     opacity: 0%;
 }
-
-.home .en{
-    color: #333;
-    text-align: left;
-}
-.home .es{
-    color: #00a1ff;
-    text-align: left;
-}
-.home .check{
+.home .translate{
     justify-content: left;
+}
+.home .translate .en{
+    font: bold 18px 'Open sans', sans-serif;
+    color: #333;
+}
+.home .translate .es{
+    font: bold 18px 'Open sans', sans-serif;
+    color: #00a1ff;
+}
+.home .translate .check{
     position: relative;
     width: 50px;
 }
-.home .check:before{
-    justify-content: left;
+.home .translate .check:before{
     content: '';
     position: absolute;
     width: 50px;
@@ -166,7 +166,7 @@ nav .fa{
     background: #333;
     border-radius: 25px;
 }
-.home .check:after{
+.home .translate .check:after{
     content: '';
     position: absolute;
     width: 25px;
@@ -177,11 +177,11 @@ nav .fa{
     border: 2px solid #333;
     box-sizing: border-box;
 }
-.home .check:checked:after{
+.home .translate .check:checked:after{
     left: 25px;
     border: 2px solid #00a1ff;
 }
-.home .check:checked:before{
+.home .translate .check:checked:before{
     background: #00a1ff;
 }
 
@@ -298,7 +298,7 @@ nav .fa{
 
 .about .box-container .box p{
     font-size: 1.3rem;
-    color:black;
+    color:#525253;
     padding: 1rem 0;
 }
 
@@ -368,10 +368,8 @@ nav .fa{
 
 /* Section Team */
 .team {
-    height: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 30px;
     position: relative;
     justify-content: center;
     min-height: 100vh;
@@ -381,6 +379,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+
 }
 .team h2 {
     font: bold 50px 'Open sans', sans-serif;
@@ -389,7 +388,7 @@ nav .fa{
     text-align: center;
 }
 .team p{
-    color: black;
+    color: #525253;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -405,13 +404,16 @@ nav .fa{
 }
 
 .team-col{
+    min-height: 150px;
+    width: 400px;
     flex-basis: 31%;
     background: white;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    padding: 1em;
+    box-shadow: 1em 0.2rem 1rem rgba(0,0,0,.08);
 }
 
 .team-col:hover{
@@ -468,42 +470,64 @@ nav .fa{
 }
 
 .product .column .image img{
+    margin-top: 10px;
     width:80%;
 }
 
 .product .column .content{
     flex:1 1 40rem;
+    padding: 2.5rem;
 }
 
 .product .column .content h3{
     font: bold 20px 'Open sans', sans-serif;
     font-size:2.0rem;
-    padding: 0px 30px;
+    padding: 10px;
     color: #333333;
     text-align: left;
 }
-.product .column .content h4{
-    margin-top: 20px;
+
+.product .review{
+    margin-top: 50px;
     font-size: 1.0rem;
-    padding: 0px 30px;
-    color: black;
 }
+
 .product .box{
     background-color: white;
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 5%;
     display: flex;
     justify-content: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 2em ;
 }
+.product .product-col{
+    min-height: 150px;
+    width: 400px;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 1em 0.5rem 1rem rgba(0,0,0,.1);
+}
+.product .product-col h4{
+    margin-top: 20px;
+    font-size: 1.0rem;
+    padding: 0px 30px;
+    color: #428BAF;
 
+}
+.product .product-col p{
+    margin-top: 20px;
+    font-size: 1.0rem;
+    padding: 0px 30px;
+    color: #525253;
+    text-align: center;
+    text-align: center;
+}
 .product p{
-    color: black;
-    font-size: 14px;
+    text-align: left;
+    color: #525253;
+    font-size: 16px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding: .5rem 0.5rem 1rem;
 }
 
 .product-col:hover{
@@ -535,8 +559,15 @@ nav .fa{
     margin-bottom: 15px;
     text-align: center;
 }
+.benefits h3{
+    font: bold 16px 'Open sans', sans-serif;
+    font-size:2.0rem;
+    padding: 10px;
+    color: #333333;
+    text-align: center;
+}
 .benefits p{
-    color: black;
+    color: #525253;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -564,16 +595,25 @@ nav .fa{
     justify-content: space-between;
 }
 
-.benefits-col{
+.benefits .benefits-col{
+    padding: 10px 10px 20px 10px;
     flex-basis: 31%;
     background: white;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    box-shadow: 1em 0.5rem 1rem rgba(0,0,0,.1);
+    min-height: 150px;
+    width: 400px;
 }
+.benefits .benefits-col h4{
+    margin-top: 20px;
+    font-size: 1.0rem;
+    padding: 0px 30px;
+    color: #428BAF;
 
+}
 
 
 .benefits-col:hover{
