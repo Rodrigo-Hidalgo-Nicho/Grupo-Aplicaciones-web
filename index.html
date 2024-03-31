@@ -5,29 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Look Médico</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--CSS-->
+    <title>Look Médico</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+          integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/34a7dbe591.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
-    <!--Google fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro&display=swap" rel="stylesheet">;
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/isologo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!--Navbar-->
     <section class="header">
         <nav>
             <a href="index.html"></a>
 
             <div class="logo">
                 <a class="navbar-brand" href="#">
-                    <img src="images/isologo.png" alt=""></a>
-                <h2 class="logonombre">Look Médico</h2>
+                    <img src="images/isologo1.png" alt=""></a>
+                <h2 class="logonombre">LookMédico</h2>
 
             </div>
 
@@ -36,11 +39,11 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About us</a></li>
-                    <li><a href="#service">Our service</a></li>
-                    <li><a href="#developer">Dev</a></li>
+                    <li><a href="#service">Service</a></li>
                     <li><a href="#product">Product</a></li>
                     <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#contact">Contact us</a></li>
+                    <li><a href="pages/pricing.html">Pricing</a></li>
 
                     <a href="https://softpage-lookmedico.github.io/front/" type="button" class="btn">SIGN UP</a>
 
@@ -49,10 +52,7 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
-    <!--/.Navbar-->
 
-
-    <!--Section Home-->
     <section id=home class="home">
         <div class="background-image" style="background-image: url(images/home-bg-img.jpg)"> </div>
         <div class="translate">
@@ -62,92 +62,83 @@
         </div>
         <div class="row">
             <div class="home-col">
-                <h1 class="title">Your best option to get <br>your best uniforms and <br> suppliers</h1>
-                <p>Try it now by signing up and get in contact with the best suppliers.<br>
-                Find your health garments, your style, your comfortability, it's totally free.
-                </p>
-                <a href="https://softpage-lookmedico.github.io/front/" class="btn1">TRY IT NOW</a>
-
+                <h1 class="title">Your best <span class="typing">option</span></h1>
+                <p>Try it now by signing up and get in contact with the best suppliers. Find your health garments, your style, your
+                    comfortability, it's totally free.</p>
+                <a href="#" class="btn">TRY IT NOW</a>
             </div>
-
         </div>
     </section>
-    <!--/.Section Home-->
 
-
-    <!--Section About us-->
-    <section class="about" id="about">
-        <h2 class="title"> About us </h2>
-
+    <section class="description" id="description">
         <div class="box-container">
             <div class="box">
-                <img src="images/abu-photo1.svg" alt="">
-                <h3>Our story</h3>
-                <p> LookMédico was born with the purpose of being a tool that provides support to its users when looking
-                    for a desired garment, requesting the manufacture and delivery of the product.</p>
+                <h3>Expertly Curated Selections</h3>
+                <p> Discover meticulously chosen selections tailored to your professional needs. Our platform ensures that only the
+                    finest products make it to your screen.</p>
             </div>
-
             <div class="box">
-                <img src="images/otro.png" alt="" >
-                <h3>Our purpose</h3>
-                <p>Our purpose is to offer a wide range of products, from uniforms to accessories, with customizable
-                    options to suit individual customer preferences and create lasting relationships with our
-                    customers.</p>
+                <h3>Seamless Shopping Experience</h3>
+                <p> Dive into a seamless shopping journey where every click leads you closer to your ideal uniform. Say goodbye to
+                    frustration and hello to effortless style.</p>
             </div>
-
+            <div class="box">
+                <h3>Empowering Healthcare Professionals</h3>
+                <p>Empower yourself with a platform designed to cater exclusively to healthcare professionals. From trendy scrubs to
+                    functional accessories, we've got you covered.</p>
+            </div>
         </div>
-
     </section>
-    <!--/.Section About us-->
 
+    <section class="about" id="about">
+        <h2 class="title"> "Empowering Your Professional Style Journey" </h2>
+        <p class="subtitle">Embark on a transformative journey to elevate your professional style with our empowering solutions
+            and exceptional service.</p>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about/aboutus.jpg" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h3>The Journey of Our Healthcare Uniform E-Commerce</h3>
+                    <p>Long ago, during our university days, we noticed a need: healthcare professionals lacked access to quality uniforms.
+                        So, we took action. What began as a project became a thriving e-commerce platform, dedicated to providing top-notch
+                        apparel nationwide.</p>
+                    <p>Over time, we've grown and adapted, always putting our customers first. Today, we're proud to be a trusted name in
+                        healthcare apparel, offering reliability, quality, and competitive prices. Our journey is a testament to vision and
+                        dedication. Join us as we continue to serve and innovate.</p>
+                    <a href="pages/about.html" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--Section Our service-->
     <section class="service" id="service">
-        <h2 class="title"> Our Service </h2>
+        <h2 class="title"> Experience reliability and quality with our service</h2>
 
         <div class="column">
             <div class="image">
                 <img src="images/interface.svg" alt="">
             </div>
-
             <div class="content">
-                <h4>QUALITY AND TRUST</h4> <br>
-                <h3>We offer the best options <br>for our clients</h3>
-                <p>LookMédico offers a direct connection with customers and suppliers,<br> quality in garments, purchase
+                <h4>QUALITY AND TRUST</h4> 
+                <h3>We offer the best options for our clients</h3>
+                <p>LookMédico offers a direct connection with customers and suppliers, quality in garments, purchase
                     security and reliability.</p>
-            </div>
-
-        </div>
-    </section>
-    <!--/.Section Our service-->
-
-
-    <!--Section Team-->
-    <section class=team id="team">
-        <h2 class="title">Team</h2>
-
-        <div class="box">
-            <div class="team-col">
-                <img src="images/2_alvaro.png" alt class="img-responsive" alt="" height="150px">
-                <h4>Alvaro Hidalgo</h4>
-                <p>Software Engineer</p>
+                <a href="pages/service.html" class="btn">Learn more</a>
             </div>
         </div>
     </section>
 
-    <!--/.Section Team-->
-
-
-    <!--Section Product-->
     <section class="product" id="product">
-        <h2 class="title"> Product </h2>
+        <h2 class="title"> Discover Seamless Uniform Solutions </h2>
 
         <div class="column">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/c1SHKBHe6ko?autoplay=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xMmMPkC8?autoplay=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="content">
                 <h3>Join the fastest and most reliable way to buy or sell uniforms</h3>
@@ -162,7 +153,7 @@
             <div class="product-col">
                 <img src="images/provider-1.svg" alt class="img-responsive" alt="" height="150px">
                 <h4>Manuel Hinostroza</h4>
-                <h4>Entrepenour</h4>
+                <h4>Entrepreneur</h4>
                 <p>This service has allowed me to increase my sellings and gain a potential number of clients.</p>
             </div>
             <div class="product-col">
@@ -175,21 +166,16 @@
                 <img src="images/client-2.svg" alt class="img-responsive" alt="" height="150px">
                 <h4>Melissa Artiaga</h4>
                 <h4>Doctor</h4>
-                <p>I'm very happy with my purchases, I fell comfortable with my garnments, I found the style and size that I couldn't find in my city stores.</p>
+                <p>I'm very happy with my purchases, I fell comfortable with my garnments, I found the style and size that I couldn't
+                    find in my city stores.</p>
             </div>
         </div>
     </section>
 
-    <!--/.Section Product-->
-
-
-    <!--Section Benefits-->
     <section class="benefits" id="benefits">
         <h2 class="title"> Benefits </h2>
-
         <h3>Join the best community for <br>
             buying and selling health clothing</h3>
-
         <div class="box">
             <div class="benefits-col">
                 <h4>Safe search</h4>
@@ -204,108 +190,197 @@
                 <p>We guarantee you to connect safely and get quality products.</p>
             </div>
         </div>
-
     </section>
 
-    <!--/.Section Benefits-->
+    <section class="partners" id="partners">
+        <h2 class="title"> Partners </h2>
+        <div class="logos-slide">
+            <img src="images/partners/partner1.png">
+            <img src="images/partners/partner2.png">
+            <img src="images/partners/partner3.png">
+            <img src="images/partners/partner4.png">
+            <img src="images/partners/partner5.png">
+            <img src="images/partners/partner6.png">
+            <img src="images/partners/partner7.png">       
+        </div>
+    </section>
 
-    <!--/.Section Contact-->
     <section class="contact" id="contact">
-
-        <div class="image">
-            <img src="images/contact-img.png" alt="">
+        <div class="background-image" style="background-image: url(images/contact-img3.png)"> </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us and one of our consultants will answer you immediately.</p>
         </div>
-
-        <form action="">
-
-            <h1 class="heading">Contact Us</h1>
-
-            <div class="inputBox">
-                <input type="text" required>
-                <label>Name</label>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Address</h4>
+                        <p>Av. Year 23,<br>Lima City, Peru</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Phone</h4>
+                        <p>+51 990000001</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Email</h4>
+                        <p>lookmedico@email.com</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="inputBox">
-                <input type="text" required>
-                <label>LastName</label>
+            <div class="contactForm">
+                <form>
+                    <h4>Send Message</h4>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
             </div>
-
-            <div class="inputBox">
-                <input type="email" required>
-                <label>email</label>
-            </div>
-
-            <div class="inputBox">
-                <input type="number" required>
-                <label>phone</label>
-            </div>
-
-            <div class="inputBox">
-                <textarea required name="" id="" cols="30" rows="10"></textarea>
-                <label>How can we help you? </label>
-            </div>
-
-            <input type="submit" class="btn" value="SEND MESSAGE">
-
-        </form>
+        </div>
 
     </section>
-    <!--/.Section Contact-->
 
-    <!--Footer-->
-    <footer>
-        <div class="footer">
+    <footer class="footer" id="footer">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
 
-            <div class="box-container">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/isologo1.png" alt="">LookMédico</a>
 
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#">home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Our service</a>
-                    <a href="#">Team</a>
-                    <a href="#">Download</a>
-                    <a href="#">Login</a>
-                    <a href="#">Contact us</a>
+                    </div>
+                    <hr class="mb-4">
+                    <p>
+                        We offer the best virtual store to get the best heatlh garments.
+                    </p>
+
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white"> <i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white"> <i class="fab fa-github"></i></a>
+                    </li>
                 </div>
 
-                <div class="box">
-                    <h3>Siguenos</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">instagram</a>
-                    <a href="#">pinterest</a>
-                    <a href="#">twitter</a>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">
+                        Guide
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="pages/about.html" class="text-white">About</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Getting started</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Account</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Discussions</a>
+                    </p>
                 </div>
 
-                <div class="box">
-                    <h3>Informacion de contacto</h3>
-                    <div class="info">
-                        <i class="fas fa-phone"></i>
-                        <p> +51 999-456-789 <br> +111-2222-333 </p>
-                    </div>
-                    <div class="info">
-                        <i class="fas fa-envelope"></i>
-                        <p> example@gmail.com <br> example@gmail.com </p>
-                    </div>
-                    <div class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p> Lima, Lima - 400104 </p>
-                    </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">
+                        Links
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="#home" class="text-white">Home</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Docs</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Plans</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Partners</a>
+                    </p>
                 </div>
 
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">
+                        Support
+                    </h5>
+                    <hr class="mb-4">
+                    <p>
+                        <li class="fas fa-circle-info me-3"></li>
+                        <a href="#" class="text-white">Product help</a>
+                    </p>
+                    <p>
+                        <li class="fas fa-flag me-3"></li> <soft class="text-white">Report an issue</soft>
+                    </p>
+                    <p>
+                        <li class="fas fa-circle-question me-3"></li> <soft class="text-white">FAQ</soft>
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="text-center mb-2">
+                    <p>
+                        &copy; LookMédico, Inc. All rights reserved
+                        <a href="#">
+                            <strong class="text-white">Test</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="text-center">
+
+                    <ul class="list-unstyled list-inline">
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"> <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"> <i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"> <i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"> <i class="fab fa-youtube"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                </hr>
             </div>
 
-            <h4 class="credit"> &copy; UPC 2023 - LookMédico </h4>
-
         </div>
+
+
     </footer>
-    <!--/.Footer-->
 
-
-    <!------JavaScript for Toogle Menu------->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
-
         var navLinks = document.getElementById("navLinks");
 
         function showMenu(){
@@ -314,12 +389,16 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
-
-
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
     <script src="script/app.js"></script>
     <script src="script/script.js"></script>
-
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".partners").appendChild(copy);
+    </script>
 </body>
 </html>
 
