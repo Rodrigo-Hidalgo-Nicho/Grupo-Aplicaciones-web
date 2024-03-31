@@ -1,4 +1,4 @@
-# Grupo-Aplicaciones-Web: SoftPage
+# LandingPage: SoftPage
 
 Bienvenido al sitio web estático (Landing Page de la aplicación)
 
