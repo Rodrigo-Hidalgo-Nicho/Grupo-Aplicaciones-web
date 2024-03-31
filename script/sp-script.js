@@ -18,7 +18,7 @@ function handleScroll() {
         aboutText.classList.add('active');
     } 
 }
-
+.
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
 
